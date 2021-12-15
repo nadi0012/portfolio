@@ -1,0 +1,551 @@
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #212529;
+    --bs-body-bg: #fff;
+
+
+}
+
+/* ---------------------------------------------------------------------------------------- */
+.container {
+    font-family: 'Oswald', sans-serif;
+}
+
+*,
+*:after,
+*:before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.bg {
+    background-color: #F1F1F1;
+}
+
+p {
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: #4d4d4d;
+}
+
+/* Adding styles to skip links */
+.skip-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skip-links a {
+    position: absolute;
+    top: -3em;
+    color: #4d4d4d;
+    padding: .5em 1em;
+    font-weight: bold;
+}
+
+.skip-links a:focus {
+    top: 0;
+}
+
+.nav-link {
+    font-size: 15px;
+    margin: 5px;
+    padding-top: 5px;
+}
+
+.navbar-toggler:hover {
+    background: #949393;
+}
+
+.masthead-home {
+    background: url("../images/yeloow-web.png");
+    /* width: 100vw; */
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    clip-path: polygon(0 0,
+            100% 0,
+            100% 78%,
+            0 100%,
+            0 0);
+    position: relative;
+}
+
+.text-container span {
+    display: block;
+    text-align: center;
+    color: #252525;
+    margin-top: 5vh;
+    font-size: 16px;
+}
+
+.text-container h1 {
+    display: block;
+    color: #252525ad;
+    margin-left: 35vw;
+    margin-right: 35vw;
+    text-align: center;
+    margin-top: 25vh;
+    border-bottom: solid 2px #252525ad;
+    border-left: solid 2px #252525ad;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-size: 25px;
+}
+
+.works {
+    border: solid 1px #707070;
+}
+
+.footer-1 {
+    background-color: #58595B;
+    color: #F1F1F1;
+}
+
+.btn-block {
+    color: #F1F1F1;
+}
+
+.footer-2 {
+    background-color: #37383A;
+    color: #F1F1F1;
+}
+
+.footer-2 .col {
+    font-weight: lighter;
+    margin-top: 20px;
+    padding-bottom: 0;
+}
+
+.card-img-top {
+    padding-top: 25px;
+}
+
+.works {
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* to make it responsive in different sizes i seperate mobile and desktop version */
+@media screen and (min-width:768px) {
+    .nav-link {
+        font-size: 20px;
+        margin: 20px;
+        padding: 6px;
+    }
+
+    .nav-item .active {
+        color: #F1F1F1;
+        box-shadow: 5px 5px 5px #888888;
+    }
+
+    .masthead-home {
+        background: url("../images/yeloow-web.png");
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        clip-path: polygon(0 0,
+                100% 0,
+                100% 78%,
+                50% 100%,
+                0 78%);
+        position: relative;
+    }
+
+    .text-container span {
+        margin-top: 5vh;
+        font-size: 20px;
+    }
+
+    .text-container h1 {
+        font-size: 30px;
+        margin-top: 25vh;
+        border-bottom: solid 3px #252525ad;
+        border-left: solid 3px #252525ad;
+    }
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.modal-footer {
+    justify-content: center;
+    font-size: 18px;
+
+}
+
+.modal-footer p {
+    font-weight: 500;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+}
+
+.detail a:hover {
+    background-color: rgb(155, 155, 155);
+}
+
+.detail {
+    margin-top: 55px;
+}
+
+/* ----------------------------------About Page---------------------------------------- */
+
+.masthead-about {
+    background: url("../images/green-web.png");
+    /* width: 100vw; */
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    clip-path: polygon(0 0,
+            100% 0,
+            100% 78%,
+            0 100%,
+            0 0);
+    position: relative;
+}
+
+.resume {
+    padding-top: 25px;
+    text-align: center;
+
+}
+
+.profile p {
+    text-align: justify;
+    font-size: 15px;
+}
+
+.s {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: solid 2px #707070;
+}
+
+.ss {
+    padding-top: 25px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-top: solid 2px #707070;
+}
+
+.skills {
+    padding-bottom: 30px;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    max-width: 100%;
+    justify-content: space-around;
+    position: relative;
+
+}
+
+.skills ul::after {
+    display: block;
+    position: absolute;
+    top: 4px;
+    content: '';
+    width: 100%;
+    border-bottom: 2px solid black;
+}
+
+.skills ul li {
+    width: 2px;
+    height: 10px;
+    border-right: 2px solid black;
+}
+
+.skills ul .current {
+    border-width: 4px;
+}
+
+.skills ul .current::after {
+    position: relative;
+    top: 10px;
+}
+
+.three .current::after {
+    content: '3';
+}
+
+.four .current::after {
+    content: '4';
+}
+
+.five .current::after {
+    content: '5';
+}
+
+.six .current::after {
+    content: '6'
+}
+
+.seven .current::after {
+    content: '7'
+}
+
+.eight .current::after {
+    content: '8';
+}
+
+.nine .current::after {
+    content: '9'
+}
+
+.ten .current::after {
+    content: '10';
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .masthead-about {
+        background: url("../images/green-web.png");
+        /* width: 100vw; */
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        clip-path: polygon(0 0,
+                100% 0,
+                100% 78%,
+                50% 100%,
+                0 78%);
+        position: relative;
+    }
+
+    .line {
+        border-left: solid 2px #707070;
+    }
+ 
+
+    .profile-pic {
+        margin-top: 30%;
+        margin-bottom: 10%;
+    }
+
+
+    .profile p {
+        text-align: justify;
+        font-size: 20px;
+    }
+
+    .profile {
+        margin-bottom: 10%;
+    }
+
+    .s {
+        margin-top: 20%;
+        margin-bottom: 25px;
+        text-align: center;
+        border-bottom: solid 2px #707070;
+        margin-left: -29px;
+    }
+
+    .center {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+/* --------------------------------Contact page------------------------------------------- */
+
+.masthead-contact {
+    background: url("../images/purple-web.png");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    clip-path: polygon(0 0,
+            100% 0,
+            100% 78%,
+            0 100%,
+            0 0);
+    position: relative;
+}
+
+/* ----------------------------Content-------------------------------- */
+.form h2 {
+    padding-bottom: 25px;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: solid 2px #545454;
+}
+
+input::placeholder {
+    color: #545454;
+    text-transform: uppercase;
+    font-size: 15px;
+
+}
+
+.form {
+    padding: 2% 1.5% 2% 1.5%;
+    width: 100%;
+}
+
+#contact-page input,
+#contact-page textarea {
+    background: none;
+    padding: 2% 1.5% 2% 1.5%;
+    width: 100%;
+    border: solid 1px #545454;
+    border-radius: 5px;
+
+}
+
+.form label {
+
+    font-size: 20px;
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+
+#form_button {
+    border: solid #545454 1px;
+    color: #545454;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: none;
+}
+
+#form_button:hover {
+    background: #545454;
+    color: #F2F3EB;
+}
+
+.submit {
+    width: 250px;
+    padding-bottom: 25px;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .masthead-contact {
+        background: url("../images/purple-web.png");
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        clip-path: polygon(0 0,
+                100% 0,
+                100% 78%,
+                50% 100%,
+                0 78%);
+        position: relative;
+    }
+
+    input::placeholder {
+        font-size: 18px;
+    }
+
+    #contact-page input,
+    #contact-page textarea {
+
+        padding: 1%;
+    }
+
+
+    .form label {
+        font-size: 25px;
+        padding-bottom: 8px;
+        padding-top: 18px;
+    }
+
+    #form_button {
+        border: solid #545454 1px;
+        color: #545454;
+        font-size: 20px;
+        margin-top: 10px;
+        border-radius: 5px;
+        background: none;
+    }
+
+    #form_button:hover {
+        background: #545454;
+        color: #F2F3EB;
+    }
+
+    .submit {
+        width: 250px;
+        padding-bottom: 25px;
+    }
+
+}
